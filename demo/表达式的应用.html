@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="utf-8">
+	<title></title>
+    <script src="vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+  {{ message | capitalize('!',label,1<2?true:false) | capitalize2}}
+</div>
+<script>
+new Vue({
+  el: '#app',
+  data: {
+    message: 'runoob',
+     label:'———'
+  },
+  filters: {
+    capitalize: function (value,value2,value3,value4) {
+      if (!value) return ''
+      value = value.toString()
+        console.log('capitalize1调用');
+      return value.charAt(0).toUpperCase() + value.slice(1)+value2+value3+value4;
+    },
+       capitalize2: function (value) {
+      if (!value) return ''
+      value = value.toString()
+           console.log('capitalize2调用');
+      return value.charAt(0)+value.charAt(1).toUpperCase() + value.slice(2);
+    }
+  }
+})
+</script>
+</body>
+</html>
