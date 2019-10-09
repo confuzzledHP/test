@@ -1,2 +1,1 @@
-# test
-项目描述
+![lifecycle](/Users/houping/Desktop/lifecycle.png)
