@@ -1,1 +1,1 @@
-![lifecycle](/Users/houping/Desktop/lifecycle.png)
+<img src="./images/lifecycle.png" />
